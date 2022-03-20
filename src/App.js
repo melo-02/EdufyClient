@@ -110,12 +110,15 @@ function App() {
                 />
               </form>
 
-              <input type = "button" onClick={addUser} value="Login"></input>
+              <button type = "button" onClick={addUser} value="Login"></button>
 
 
               <a href ="#"> Lost your password? </a><br></br>
 
               <a href ="#"> Don't Have an account? </a><br></br>
+
+
+             
 
 
             </div>
