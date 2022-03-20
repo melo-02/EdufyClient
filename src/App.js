@@ -117,7 +117,7 @@ function App() {
 
               <a href ="#"> Don't Have an account? </a><br></br>
 
-              <button onClick={addUser}>Submit</button>
+         
 
 
 
