@@ -83,8 +83,8 @@ h1{
   border-radius: 20px;
 }
 
-.loginbox input[type="button"]:hover{
+.loginbox input[type="submit"]:hover{
   cursor: pointer;
-  background: #77b405;
+  background: #ffc107;
   color: #000;
 }
