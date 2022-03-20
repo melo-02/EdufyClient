@@ -104,18 +104,21 @@ function App() {
                 <p>password:</p>
 
                 <input type="password" 
-                onChange={(event) => {
+                onChange={(addUser) => {
                   setPassword(event.target.value)
                   }} 
                 />
               </form>
 
-              <input type = "submit" onClick={addUser} name="" value="Login"></input>
+              <input type = "submit" obClick={addUser} name="" value="Login"></input>
 
 
               <a href ="#"> Lost your password? </a><br></br>
 
               <a href ="#"> Don't Have an account? </a><br></br>
+
+             
+
 
 
             </div>
