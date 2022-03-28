@@ -20,7 +20,7 @@ test ('renders footer', async () => {
 
 test ('renders homepage', async () => {
     render(<Home/>);
-    const homeElement = screen.getByText(/Home/);
+    const homeElement = screen.getByText(/Welcome to Edufy!/);
     expect(homeElement).toBeInTheDocument();
 });
 
