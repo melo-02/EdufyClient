@@ -19,7 +19,7 @@ jobs:
           command: "echo Hello, World!"
   node-tests:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:10.14.2
     steps:
       - checkout
       - run: npm run test
