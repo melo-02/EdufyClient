@@ -5,7 +5,8 @@ import {
   Navigation,
   Footer,
   Home,
-  Login
+  Login,
+  About
 } from "./Pages";
 import reportWebVitals from './reportWebVitals';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/about" element={<About />} />
     </Routes>
     <Footer />
   </Router>,
