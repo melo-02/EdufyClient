@@ -17,6 +17,9 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+
+  # Node testing code referenced from heinrich10 on GitHub
+  # https://github.com/heinrich10/demo-unit-test-circle-ci/blob/master/.circleci/config.yml
   node-tests:
     docker:
       - image: circleci/node:10.14.2
