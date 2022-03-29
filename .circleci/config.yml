@@ -18,9 +18,31 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
 
+  # Node testing code referenced from heinrich10 on GitHub
+  # https://github.com/heinrich10/demo-unit-test-circle-ci/blob/master/.circleci/config.yml
+  node-tests:
+    docker:
+      - image: circleci/node:10.14.2
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json"}}
+          paths:
+           - ./node_modules
+      - run:
+          name: install dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-chache-{{ checksum "package.json"}}
+          paths: ./node_modules
+      - run:
+          name: test
+          command: npm run test
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - node-tests
