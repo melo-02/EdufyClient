@@ -8,7 +8,7 @@ function About() {
     const [questionList, setQuestionList] = useState([]);
 
     useEffect(() => {
-        Axios.get('http://localhost:3000/questions').then((response) => {
+        Axios.get('https://edufy-by-edufiers.herokuapp.com/questions').then((response) => {
             setQuestionList(response.data);
         });
     }, []);
