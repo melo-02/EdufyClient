@@ -9,14 +9,21 @@ var QuestionNum = 0;
 
 function SubmitQuiz(){
     
-    var questionNumber;
+    
     var As;
+    
+    let elements = null;
 
-    for (var i = 0; i<questionNumber; i++){
 
-        if(document.getElementById('A').checked){
-            As++;
+    for (var i = 0; i<QuestionNum; i++){
+        elements = document.getElementsByName("a" + (i+1));
+       
+        for (var j = 0; j<elements.length; j++){
+            if (elements[j].checked){
+                console.log("A RADIO IS CHECKED");
+            }
         }
+
 
 
     }
@@ -24,7 +31,7 @@ function SubmitQuiz(){
 
     console.log("Question Amount: " + QuestionNum);
     console.log("Amount of A's" + As);
-
+    console.log (elements);
 
 
 
