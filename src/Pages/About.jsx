@@ -5,34 +5,35 @@ import '../App.css';
 import { useState } from 'react';
 import Axios from 'axios'
 
+var QuestionNum = 0;
 
 function SubmitQuiz(){
-    const [questionList, setQuestionList] = useState([]);
+    
+    var questionNumber;
+    var As;
 
-    useEffect(() => {
-        Axios.get('https://edufy-by-edufiers.herokuapp.com/questions').then((response) => {
-            setQuestionList(response.data);
-        });
-    }, []);
+    for (var i = 0; i<questionNumber; i++){
 
-
-    var correct = 0;
-    questionList.map((val) => {
-
-        var t = val.correctChoice;
-
-        if (document.getElementById(t).checked == true){
-            correct++;
+        if(document.getElementById('A').checked){
+            As++;
         }
 
-    })
 
-    console.log(correct);
+    }
+
+
+    console.log("Question Amount: " + QuestionNum);
+    console.log("Amount of A's" + As);
+
+
+
+
 
 }
 
 
 function About() {
+
     const [questionList, setQuestionList] = useState([]);
 
     useEffect(() => {
@@ -40,10 +41,11 @@ function About() {
             setQuestionList(response.data);
         });
     }, []);
-
+    QuestionNum = 0;
     return (
             
             questionList.map((val) => {
+                {QuestionNum++}
                 return (
                     
                     <div class="accordion" id="Quiz">
@@ -80,8 +82,6 @@ function About() {
                                 </div>
 
                                 <button onClick={SubmitQuiz}>Click me</button>
-
-
 
                                     {/*Closes Accordion Body*/}
                                 </div>
