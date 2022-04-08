@@ -5,6 +5,8 @@ import Login from './Pages/Login';
 import Footer from './Pages/Footer';
 import Home from './Pages/Home';
 import Navigation from './Pages/Navigation';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 test ('renders registration page', async () => {
     render(<Login/>);

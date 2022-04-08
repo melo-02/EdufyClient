@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Navigation,
@@ -11,6 +13,7 @@ import {
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  
   <Router>
     <Navigation />
     <Routes>
@@ -20,7 +23,7 @@ ReactDOM.render(
     </Routes>
     <Footer />
   </Router>,
-
+ 
   document.getElementById("root")
 );
 
