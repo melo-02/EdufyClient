@@ -14,14 +14,19 @@ function SubmitQuiz(){
     
     let elements = null;
 
-
+    //FOR LOOP FOR EACH QUESTION
     for (var i = 0; i<QuestionNum; i++){
         elements = document.getElementsByName("a" + (i+1));
-       
+        //An element is the current 4 bubbles in a list
+
+
+        //FOR LOOP FOR EACH BUBBLE (j->0->3)
         for (var j = 0; j<elements.length; j++){
-            if (elements[j].checked){
-                console.log("A RADIO IS CHECKED");
+
+            if (elements[j].checked && elements[j].value == elements[j].id){
+                console.log("correct answer checked");
             }
+
         }
 
 
@@ -30,7 +35,6 @@ function SubmitQuiz(){
 
 
     console.log("Question Amount: " + QuestionNum);
-    console.log("Amount of A's" + As);
     console.log (elements);
 
 
@@ -72,19 +76,19 @@ function About() {
                                     </h3>                            
                         
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="A" value="option1"></input>
+                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="A" value={val.correctChoice}></input>
                                     <label class="form-check-label" for="inlineRadio1">A: {val.choiceA}</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="B" value="option1"></input>
+                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="B" value={val.correctChoice}></input>
                                     <label class="form-check-label" for="inlineRadio1">B: {val.choiceB}</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="C" value="option1"></input>
+                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="C" value={val.correctChoice}></input>
                                     <label class="form-check-label" for="inlineRadio1">C: {val.choiceC}</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="D" value="option1"></input>
+                                    <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="D" value={val.correctChoice}></input>
                                     <label class="form-check-label" for="inlineRadio1">D: {val.choiceD}</label>
                                 </div>
 
