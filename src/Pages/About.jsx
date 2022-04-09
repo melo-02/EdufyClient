@@ -10,8 +10,7 @@ var QuestionNum = 0;
 function SubmitQuiz(){
     
     
-    var As;
-    
+    var CorrectAnswers = 0;
     let elements = null;
 
     //FOR LOOP FOR EACH QUESTION
@@ -19,24 +18,27 @@ function SubmitQuiz(){
         elements = document.getElementsByName("a" + (i+1));
         //An element is the current 4 bubbles in a list
 
-
         //FOR LOOP FOR EACH BUBBLE (j->0->3)
         for (var j = 0; j<elements.length; j++){
 
             if (elements[j].checked && elements[j].value == elements[j].id){
-                console.log("correct answer checked");
+                CorrectAnswers++
             }
+
 
         }
 
-
-
     }
-
-
+    console.log("Correct Answers: " + CorrectAnswers);
     console.log("Question Amount: " + QuestionNum);
-    console.log (elements);
 
+
+    DisplayAnswers(CorrectAnswers, QuestionNum);
+}
+
+function DisplayAnswers(Correct, Total){
+
+    document.getElementById("Results").innerHTML = Correct + " / " + Total;
 
 
 
@@ -93,6 +95,10 @@ function About() {
                                 </div>
 
                                 <button onClick={SubmitQuiz}>Click me</button>
+
+                                <div id="Results">Not submitted yet</div>
+
+
 
                                     {/*Closes Accordion Body*/}
                                 </div>
