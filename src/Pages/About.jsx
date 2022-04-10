@@ -94,15 +94,17 @@ function Quiz(){
 function About() {
   return ( [
 
-    <div id="Title">Quiz Title Here</div>
+    <div class="center" id="Title">Quiz Title Here</div>
     ,
     Quiz() 
     ,
-    <div id="Results">Not submitted yet</div>
+    <div class="center" id="Results">Not submitted yet</div>
     ,
-    <div onClick={SubmitQuiz} class="button">Submit Quiz</div>
     //SUBMIT BUTTON GOES HERE, LEAVE COMMAS FOR CORRECT PAGE GEN
-
+,
+    <div class="containerQuizButton">  
+        <div class="center button" onClick={SubmitQuiz} >Submit Quiz</div>
+    </div>  
 
 
   ]);

@@ -30,6 +30,9 @@
 }
 
 .button {
+  border: 5px solid #ffffff;
+  text-align: center;
+
   display: inline-block;
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
@@ -72,3 +75,14 @@
 .button:hover:before {
   width: 100%;
 }
+
+.center {
+  border: 5px solid #ffffff;
+  text-align: center;
+  }
+
+
+  .containerQuizButton{
+    border: 5px solid #ffffff;
+    text-align: center;
+  }
