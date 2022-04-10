@@ -57,9 +57,8 @@ function Quiz(){
                             </h2>
                             <div id={`a${val.questionNumber}`} class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body">
-                                    <h3>
-                                        Index: {val.questionNumber} | Question: { val.question } | A: {val.choiceA} | B: {val.choiceB} | C: {val.choiceC} | D: {val.choiceD} | Correct: {val.correctChoice}
-                                    </h3>                            
+                                   
+                                        
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name={`a${val.questionNumber}`} id="A" value={val.correctChoice}></input>
                                     <label class="form-check-label" for="inlineRadio1">A: {val.choiceA}</label>
@@ -98,7 +97,7 @@ function About() {
     ,
     Quiz() 
     ,
-    <div class="center" id="Results">Not submitted yet</div>
+    <div class="center" id="Results"></div>
     ,
     //SUBMIT BUTTON GOES HERE, LEAVE COMMAS FOR CORRECT PAGE GEN
 ,
