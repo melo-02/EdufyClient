@@ -9,7 +9,9 @@ import {
   Home,
   Login,
   About,
-  Classes
+  Classes,
+  Authenticate,
+  Dashboard
 } from "./Pages";
 import reportWebVitals from './reportWebVitals';
 
@@ -22,6 +24,8 @@ ReactDOM.render(
       <Route path="/login" element={<Login />} />
       <Route path="/about" element={<About />} />
       <Route path="/classes" element={<Classes />} />
+      <Route path="/authenticate" element={<Authenticate />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
     <Footer />
   </Router>,
