@@ -26,13 +26,12 @@ function Classes() {
           </div>
           <div class="col-md-4">
             <h2>Earth and Space Science</h2>
-            <p>What is a Earth and space science?
-Earth and space science explores the interconnections between the land, ocean, atmosphere, and life of our planet. These include the cycles of water, carbon, rock, and other materials that continuously shape, influence, and sustain Earth and its inhabitants. </p>
+            <p>Earth and space science explores the interconnections between the land, ocean, atmosphere, and life of our planet. These include the cycles of water, carbon, rock, and other materials that continuously shape, influence, and sustain Earth and its inhabitants. </p>
             <p><a class="btn btn-secondary" href="#" role="button">View quizzes &raquo;</a></p>
           </div>
           <div class="col-md-4">
             <h2>Reading and Writing</h2>
-            <p>yea</p>
+            <p>Someone please add a description for this i cant find one on google and idk its just reading and writing or change the class categories if u want we can make them link to individual quizzes too it doesnt matter these are kinda just place holders</p>
             <p><a class="btn btn-secondary" href="#" role="button">View quizzes &raquo;</a></p>
           </div>
         </div>
