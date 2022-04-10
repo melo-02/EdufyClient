@@ -8,8 +8,6 @@ import Axios from 'axios'
 var QuestionNum = 0;
 
 function SubmitQuiz(){
-    
-    
     var CorrectAnswers = 0;
     let elements = null;
 
@@ -17,36 +15,26 @@ function SubmitQuiz(){
     for (var i = 0; i<QuestionNum; i++){
         elements = document.getElementsByName("a" + (i+1));
         //An element is the current 4 bubbles in a list
-
         //FOR LOOP FOR EACH BUBBLE (j->0->3)
         for (var j = 0; j<elements.length; j++){
-
             if (elements[j].checked && elements[j].value == elements[j].id){
                 CorrectAnswers++
             }
-
-
         }
-
     }
     console.log("Correct Answers: " + CorrectAnswers);
     console.log("Question Amount: " + QuestionNum);
-
-
     DisplayAnswers(CorrectAnswers, QuestionNum);
 }
 
 function DisplayAnswers(Correct, Total){
-
     document.getElementById("Results").innerHTML = Correct + " / " + Total;
-
-
-
 }
 
 
-function About() {
 
+
+function Quiz(){
     const [questionList, setQuestionList] = useState([]);
 
     useEffect(() => {
@@ -94,11 +82,6 @@ function About() {
                                     <label class="form-check-label" for="inlineRadio1">D: {val.choiceD}</label>
                                 </div>
 
-                                <button onClick={SubmitQuiz}>Click me</button>
-
-                                <div id="Results">Not submitted yet</div>
-
-
 
                                     {/*Closes Accordion Body*/}
                                 </div>
@@ -121,6 +104,25 @@ function About() {
        
 
     );
+
+}
+
+function About() {
+  return ( [
+    
+    <div id="Results">Quiz Title Here</div>
+    ,
+    Quiz() 
+    ,
+    <div id="Results">Not submitted yet</div>
+    ,
+    //SUBMIT BUTTON GOES HERE, LEAVE COMMAS FOR CORRECT PAGE GEN
+
+
+
+  ]);
+
+
 
 }
 
