@@ -48,14 +48,14 @@ function Quiz(){
             questionList.map((val) => {
                 {QuestionNum++}
                 return (
-                    <div class="accordion" id="Quiz">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">               
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#a${val.questionNumber}`} aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="accordion col-md  " id="Quiz">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="panelsStayOpen-headingOne">               
+                            <button class="accordion-button  text-black" type="button" data-bs-toggle="collapse" data-bs-target={`#a${val.questionNumber}`} aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                 { val.question }
                             </button>
                             </h2>
-                            <div id={`a${val.questionNumber}`} class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div id={`a${val.questionNumber}`} class="accordion-collapse collapse show " aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body">
                                    
                                         
