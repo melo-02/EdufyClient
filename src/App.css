@@ -49,7 +49,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0cf;
+  background-color: #616961;
   border-radius: 10rem;
   z-index: -2;
 }
@@ -60,7 +60,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #008fb3;
+  background-color: #77bd77;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
