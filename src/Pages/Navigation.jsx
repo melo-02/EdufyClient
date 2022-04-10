@@ -17,12 +17,7 @@ function Navigation() {
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/login">
-                  Login
-                  <span className="sr-only">(current)</span>
-                </NavLink>
-              </li>
+              
               <li className="nav-item">
                 <NavLink className="nav-link" to="/about">
                   About
@@ -33,6 +28,7 @@ function Navigation() {
                   Classes
                 </NavLink>
               </li>
+              <a class="btn btn btn-outline-secondary" href="/Login">Sign up</a>
             </ul>
           </div>
         </div>
