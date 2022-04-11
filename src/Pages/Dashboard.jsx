@@ -10,7 +10,7 @@ function Dashboard() {
     Axios.defaults.withCredentials = true; // Allows cookie values to be set from a different domain
 
     const logOutUser = () => {
-        Axios.post('http://localhost:4000/logout', {}).then((response) => {
+        Axios.post('https://edufy-by-edufiers.herokuapp.com/logout', {}).then((response) => {
             console.log(response);
             if (response.data == "Logout successful") {
                 navigate('/authenticate')
@@ -20,7 +20,7 @@ function Dashboard() {
 
 
     useEffect(() => { // Runs every time we referesh our page
-        Axios.get("http://localhost:4000/auth").then((response) => {
+        Axios.get("https://edufy-by-edufiers.herokuapp.com/auth").then((response) => {
             if (response.data.loggedIn === true) {
                 setLoggedUser(response.data.user[0].username);
             } else {
