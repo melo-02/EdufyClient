@@ -28,6 +28,11 @@ function Navigation() {
                   Classes
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/authenticate">
+                  Authenticate
+                </NavLink>
+              </li>
               <a class="btn btn btn-outline-secondary" href="/Login">Sign up</a>
             </ul>
           </div>
