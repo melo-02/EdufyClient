@@ -93,7 +93,7 @@ function Quiz(){
 function Science() {
   return ( [
 
-    <div class="center" id="Title">Quiz Title Here</div>
+    <div class="center" id="Title">Solar System Quiz</div>
     ,
     Quiz() 
     ,

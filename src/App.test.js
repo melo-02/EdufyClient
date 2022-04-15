@@ -1,7 +1,7 @@
 
 import {render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 import Footer from './Pages/Footer';
 import Home from './Pages/Home';
 import Navigation from './Pages/Navigation';
@@ -11,15 +11,10 @@ import Signup from './Pages/Signup';
 
 test ('renders registration page', async () => {
     render(<Signup/>);
-    const loginElement = screen.getByText(/User Login/);
+    const loginElement = screen.getByText(/Sign up/);
     expect(loginElement).toBeInTheDocument();
 });
 
-test ('renders footer', async () => {
-    render(<Footer/>);
-    const footerElement = screen.getByText(/Edufy 2022/);
-    expect(footerElement).toBeInTheDocument();
-});
 
 test ('renders homepage', async () => {
     render(<Home/>);
