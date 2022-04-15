@@ -93,7 +93,7 @@ function Quiz(){
 function Algebra() {
   return ( [
 
-    <div class="center" id="Title">Quiz Title Here</div>
+    <div class="center" id="Title">Algebra Quiz</div>
     ,
     Quiz() 
     ,
