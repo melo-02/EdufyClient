@@ -67,7 +67,7 @@ function Authenticate() {
 
                   <br></br>
                   <a href ="#"> Lost your password? </a><br></br>
-                  <a href ="#"> Don't Have an account? </a><br></br>
+                  <a href ="/Signup"> Don't Have an account? </a><br></br>
                   <br></br>
                      <input type="button" onClick={authUser} name="" value="Log In"></input>
 
