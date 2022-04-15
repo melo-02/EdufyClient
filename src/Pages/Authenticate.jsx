@@ -57,7 +57,7 @@ function Authenticate() {
                         }}
                      />
 
-                     <p>password:</p>
+                     <p>Password:</p>
 
                      <input type="Password"
                         onChange={(event) => {
