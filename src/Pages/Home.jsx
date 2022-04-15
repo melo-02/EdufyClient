@@ -25,18 +25,20 @@ function Home() {
 
         <div class="flex-container">
 
-          <div class="flex-child magenta">
-              <div class="buttondiff" id="button-3">
-               <div id="circle"></div>
-              < a href="/authenticate">Login!</a>
-              </div>
+          <div class="flex-child">
+             
           </div>
 
-          <div class="flex-child green">
-            <div class="buttondiff" id="button-3">
-              <div id="circle"></div>
-                <a href="/signup">Sign Up!</a>
-          </div>
+          <div class="flex-child">
+            <div class="center">
+              <div class="buttondiff" id="button-3">
+                <div id="circle"></div>
+                  <a href="/signup">Sign Up!</a>
+            </div>
+
+            </div>
+
+
        </div>
 
 
