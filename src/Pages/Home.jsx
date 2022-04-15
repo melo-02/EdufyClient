@@ -31,13 +31,16 @@ function Home() {
 
           <div class="flex-child " href ="/Signup">
             <div class="center ">
-            
-                <div id="circle  "></div>
-                  <a class="text-dark" ></a>
-                  <div class="d-grid gap-2 col-7 mx-auto">
-                  <a href="/Signup" class="btn btn-lg btn-secondary link"> Get started now! </a>
-            </div>
-            </div>
+              <a href = '/signup'> 
+
+              <div class="buttondiff" id="button-3">
+                <div id="circle"></div>
+                  <a class="text-dark">Get Started Now!</a>
+                 </div>
+               </a>
+               </div>
+             
+
 
 
        </div>
