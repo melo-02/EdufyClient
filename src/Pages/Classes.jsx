@@ -22,17 +22,17 @@ function Classes() {
           <div class="col-md-4">
             <h2>Algebra</h2>
             <p>Algebra is the branch of mathematics that helps in the representation of problems or situations in the form of mathematical expressions. It involves variables like x, y, z, and mathematical operations like addition, subtraction, multiplication, and division to form a meaningful mathematical expression. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View quizzes &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="#" role="button">Open quiz &raquo;</a></p>
           </div>
           <div class="col-md-4">
             <h2>Earth and Space Science</h2>
             <p>Earth and space science explores the interconnections between the land, ocean, atmosphere, and life of our planet. These include the cycles of water, carbon, rock, and other materials that continuously shape, influence, and sustain Earth and its inhabitants. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View quizzes &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="#" role="button">Open quiz &raquo;</a></p>
           </div>
           <div class="col-md-4">
-            <h2>Reading and Writing</h2>
-            <p>Someone please add a description for this i cant find one on google and idk its just reading and writing or change the class categories if u want we can make them link to individual quizzes too it doesnt matter these are kinda just place holders</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View quizzes &raquo;</a></p>
+            <h2>Grammar </h2>
+            <p>Grammar encompasses the system and structure of a language, including the study of sentence structures, tenses, semicolons, apostrophes, prepositional phrases, and more.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Open quiz &raquo;</a></p>
           </div>
         </div>
 
