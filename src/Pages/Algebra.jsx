@@ -38,7 +38,7 @@ function Quiz(){
     const [questionList, setQuestionList] = useState([]);
 
     useEffect(() => {
-        Axios.get('https://edufy-by-edufiers.herokuapp.com/').then((response) => {
+        Axios.get('https://edufy-by-edufiers.herokuapp.com/questions').then((response) => {
             setQuestionList(response.data);
         });
     }, []);
