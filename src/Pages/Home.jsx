@@ -29,11 +29,11 @@ function Home() {
              
           </div>
 
-          <div class="flex-child">
-            <div class="center">
-              <div class="buttondiff" onclick="location.href='/signup'" id="button-3">
-                <div id="circle"></div>
-                  <a href="/signup">get started!</a>
+          <div class="flex-child ">
+            <div class="center ">
+              <div class="buttondiff " id="button-3">
+                <div id="circle  "></div>
+                  <a class="text-dark" href="/signup">Get Started Now!</a>
             </div>
 
             </div>
