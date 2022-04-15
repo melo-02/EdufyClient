@@ -34,7 +34,7 @@ ReactDOM.render(
       <Route path="/science" element={<Science />} />
       <Route path="/grammar" element={<Grammar />} />
     </Routes>
-    <Footer />
+  
   </Router>,
  
   document.getElementById("root")
