@@ -1,7 +1,7 @@
 
 import {render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 import Footer from './Pages/Footer';
 import Home from './Pages/Home';
 import Navigation from './Pages/Navigation';
