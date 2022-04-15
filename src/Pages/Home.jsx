@@ -31,9 +31,9 @@ function Home() {
 
           <div class="flex-child">
             <div class="center">
-              <div class="buttondiff" id="button-3">
+              <div class="buttondiff" onclick="location.href='/signup'" id="button-3">
                 <div id="circle"></div>
-                  <a href="/signup">Sign Up!</a>
+                  <a href="/signup">get started!</a>
             </div>
 
             </div>
