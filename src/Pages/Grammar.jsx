@@ -93,7 +93,7 @@ function Quiz(){
 function Grammar() {
   return ( [
 
-    <div class="center" id="Title">Quiz Title Here</div>
+    <div class="center" id="Title">Grammar</div>
     ,
     Quiz() 
     ,
