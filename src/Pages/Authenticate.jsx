@@ -49,7 +49,7 @@ function Authenticate() {
 
                   <h1>Login</h1>
                   <form>
-                     <p>username:</p>
+                     <p>Username:</p>
 
                      <input type="text"
                         onChange={(event) => {
@@ -59,13 +59,16 @@ function Authenticate() {
 
                      <p>password:</p>
 
-                     <input type="password"
+                     <input type="Password"
                         onChange={(event) => {
                            setPassword(event.target.value)
                         }}
                      />
-   <br></br>
-   <br></br>
+
+                  <br></br>
+                  <a href ="#"> Lost your password? </a><br></br>
+                  <a href ="#"> Don't Have an account? </a><br></br>
+                  <br></br>
                      <input type="button" onClick={authUser} name="" value="Log In"></input>
 
                   </form>

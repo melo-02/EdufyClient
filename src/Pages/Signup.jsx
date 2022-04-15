@@ -36,7 +36,7 @@ function Signup() {
           <body>
             <div class = "loginbox">
 
-              <h1>User Login</h1>
+              <h1>Sign up</h1>
               <form>
                 <p>First Name:</p>
                 <input type="text" 
@@ -52,7 +52,7 @@ function Signup() {
                   }} 
                 />
 
-                <p>username:</p>
+                <p>Username:</p>
 
                 <input type="text" 
                 onChange={(event) => {
@@ -60,7 +60,7 @@ function Signup() {
                   }} 
                 />
 
-                <p>password:</p>
+                <p>Password:</p>
 
                 <input type="password" 
                 onChange={(event) => {
@@ -69,11 +69,10 @@ function Signup() {
                 />
 <br></br>
 <br></br>
-              <input type = "button" onClick={addUser} name="" value="Login"></input>
+              <input type = "button" onClick={addUser} name="" value="Create Account"></input>
               
               </form>
-              <a href ="#"> Lost your password? </a><br></br>
-              <a href ="#"> Don't Have an account? </a><br></br>
+
             </div>
           </body>
     

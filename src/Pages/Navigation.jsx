@@ -30,7 +30,7 @@ function Navigation() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/authenticate">
-                  Authenticate
+                  Login
                 </NavLink>
               </li>
               <a class="btn btn btn-outline-secondary" href="/Signup">Sign up</a>
