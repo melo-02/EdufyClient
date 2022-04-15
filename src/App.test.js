@@ -11,15 +11,10 @@ import Signup from './Pages/Signup';
 
 test ('renders registration page', async () => {
     render(<Signup/>);
-    const loginElement = screen.getByText(/User Login/);
+    const loginElement = screen.getByText(/Sign up/);
     expect(loginElement).toBeInTheDocument();
 });
 
-test ('renders footer', async () => {
-    render(<Footer/>);
-    const footerElement = screen.getByText(/Edufy 2022/);
-    expect(footerElement).toBeInTheDocument();
-});
 
 test ('renders homepage', async () => {
     render(<Home/>);
