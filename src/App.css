@@ -155,7 +155,7 @@ a {
   opacity: 0;
   line-height: 40px;
   border-radius: 50%;
-  background: #BFC0C0;
+  background: #d5d5d5;
   position: absolute;
   transition: all .5s ease-Out;
   top: 20px;
