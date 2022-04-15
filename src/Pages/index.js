@@ -6,3 +6,6 @@ export { default as About } from "./About";
 export { default as Classes } from "./Classes";
 export { default as Authenticate } from "./Authenticate";
 export { default as Dashboard } from "./Dashboard";
+export { default as Algebra } from "./Algebra";
+export { default as Science } from "./Science";
+export { default as Grammar } from "./Grammar";

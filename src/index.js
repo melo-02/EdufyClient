@@ -11,7 +11,11 @@ import {
   About,
   Classes,
   Authenticate,
-  Dashboard
+  Dashboard,
+  Algebra,
+  Science,
+  Grammar
+
 } from "./Pages";
 import reportWebVitals from './reportWebVitals';
 
@@ -21,11 +25,14 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Signup" element={<Signup />} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="/about" element={<About />} />
       <Route path="/classes" element={<Classes />} />
       <Route path="/authenticate" element={<Authenticate />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/algebra" element={<Algebra />} />
+      <Route path="/science" element={<Science />} />
+      <Route path="/grammar" element={<Grammar />} />
     </Routes>
     <Footer />
   </Router>,
