@@ -2,11 +2,9 @@
 import {render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Signup from './Pages/Signup';
-import Footer from './Pages/Footer';
 import Home from './Pages/Home';
 import Navigation from './Pages/Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Signup from './Pages/Signup';
 
 
 test ('renders registration page', async () => {

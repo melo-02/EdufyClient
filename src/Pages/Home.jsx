@@ -29,7 +29,7 @@ function Home() {
              
           </div>
 
-          <div class="flex-child ">
+          <div class="flex-child " href ="/Signup">
             <div class="center ">
               <a href = '/signup'> 
 
@@ -40,6 +40,7 @@ function Home() {
                </a>
                </div>
              
+
 
 
        </div>
