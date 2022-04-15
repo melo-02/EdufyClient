@@ -32,7 +32,7 @@ function Home() {
           <div class="flex-child ">
             <div class="center ">
               <div class="buttondiff " id="button-3">
-                <div id="circle  "></div>
+                <div id="circle"></div>
                   <a class="text-dark" href="/signup">Get Started Now!</a>
             </div>
 
