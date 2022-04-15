@@ -7,7 +7,7 @@ import {
   Navigation,
   Footer,
   Home,
-  Login,
+  Signup,
   About,
   Classes,
   Authenticate,
@@ -21,7 +21,7 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/Signup" element={<Signup />} />
       <Route path="/about" element={<About />} />
       <Route path="/classes" element={<Classes />} />
       <Route path="/authenticate" element={<Authenticate />} />

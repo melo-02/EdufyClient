@@ -6,10 +6,11 @@ import Footer from './Pages/Footer';
 import Home from './Pages/Home';
 import Navigation from './Pages/Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Signup from './Pages/Signup';
 
 
 test ('renders registration page', async () => {
-    render(<Login/>);
+    render(<Signup/>);
     const loginElement = screen.getByText(/User Login/);
     expect(loginElement).toBeInTheDocument();
 });

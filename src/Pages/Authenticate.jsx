@@ -47,7 +47,7 @@ function Authenticate() {
             <body>
                <div class="loginbox">
 
-                  <h1>User Login</h1>
+                  <h1>Login</h1>
                   <form>
                      <p>username:</p>
 
@@ -64,7 +64,8 @@ function Authenticate() {
                            setPassword(event.target.value)
                         }}
                      />
-
+   <br></br>
+   <br></br>
                      <input type="button" onClick={authUser} name="" value="Log In"></input>
 
                   </form>

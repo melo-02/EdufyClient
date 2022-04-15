@@ -4,7 +4,7 @@ import '../App.css';
 import { useState } from 'react';
 import Axios from 'axios'
 
-function Login() {
+function Signup() {
 
   const [fName, setfName] = useState("");
   const [lName, setlName] = useState("");
@@ -67,7 +67,8 @@ function Login() {
                   setPassword(event.target.value)
                   }} 
                 />
-
+<br></br>
+<br></br>
               <input type = "button" onClick={addUser} name="" value="Login"></input>
               
               </form>
@@ -81,4 +82,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;
