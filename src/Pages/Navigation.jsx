@@ -33,7 +33,7 @@ function Navigation() {
                   Authenticate
                 </NavLink>
               </li>
-              <a class="btn btn btn-outline-secondary" href="/Login">Sign up</a>
+              <a class="btn btn btn-outline-secondary" href="/Signup">Sign up</a>
             </ul>
           </div>
         </div>
